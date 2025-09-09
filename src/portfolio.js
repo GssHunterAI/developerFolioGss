@@ -20,26 +20,26 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
+  username: "Ahmed Tarek",
+  title: "Hi all, I'm Ahmed Tarek",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "AI/ML Engineer with 10+ hands-on projects 🚀 Experienced in building end-to-end machine learning applications, computer vision systems, and deep learning solutions using Python, TensorFlow, and scikit-learn."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "", // Set to empty to hide the button, or add your resume link
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/GssHunterAI",
+  linkedin: "", // Add your LinkedIn profile URL
+  gmail: "", // Add your email address
+  gitlab: "", // Add your GitLab profile if you have one
+  facebook: "", // Add your Facebook profile if you want
+  medium: "", // Add your Medium profile if you have one
+  stackoverflow: "", // Add your Stack Overflow profile if you have one
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +49,20 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "EXPERIENCED AI/ML ENGINEER WITH PROVEN PROJECT PORTFOLIO",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "🤖 Build complete ML applications with Flask web interfaces and real-time prediction APIs"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("🧠 Develop advanced deep learning models including GANs, CNNs, and neural networks using TensorFlow/Keras and PyTorch Lightning"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "📊 Perform comprehensive data analysis and feature engineering across healthcare, finance, and engineering domains"
+    ),
+    emoji(
+      "� Implement various ML algorithms: SVM, Random Forest, Gradient Boosting, CNNs, and Neural Network Embeddings"
+    ),
+    emoji(
+      "📈 Create interactive visualizations and conduct exploratory data analysis with advanced statistical insights"
     )
   ],
 
@@ -65,56 +71,60 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "tensorflow",
+      fontAwesomeClassname: "fas fa-brain"
+    },
+    {
+      skillName: "pytorch",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "scikit-learn",
+      fontAwesomeClassname: "fas fa-chart-line"
+    },
+    {
+      skillName: "flask",
+      fontAwesomeClassname: "fas fa-flask"
+    },
+    {
+      skillName: "jupyter",
+      fontAwesomeClassname: "fas fa-book"
+    },
+    {
+      skillName: "pandas",
+      fontAwesomeClassname: "fas fa-table"
+    },
+    {
+      skillName: "numpy",
+      fontAwesomeClassname: "fas fa-calculator"
+    },
+    {
+      skillName: "matplotlib",
+      fontAwesomeClassname: "fas fa-chart-bar"
+    },
+    {
+      skillName: "seaborn",
+      fontAwesomeClassname: "fas fa-chart-area"
+    },
+    {
+      skillName: "opencv",
+      fontAwesomeClassname: "fas fa-eye"
+    },
+    {
+      skillName: "keras",
+      fontAwesomeClassname: "fas fa-layer-group"
+    },
+    {
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "git",
+      fontAwesomeClassname: "fab fa-git-alt"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -126,23 +136,16 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "Alexandria Higher Institute of Engineering and Technology",
+      logo: require("./assets/images/small-logo.png"), // Replace with your institution logo
+      subHeader: "Bachelor's Degree in Computer Engineering",
+      duration: "September 2020 - May 2025",
+      desc: "Focused on Machine Learning, Artificial Intelligence, and Data Science. Currently building expertise in ML engineering.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Studied core AI/ML concepts: supervised/unsupervised learning, neural networks",
+        "Completed projects in computer vision, NLP, and predictive analytics",
+        "Learning advanced topics: deep learning, reinforcement learning, MLOps"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -153,16 +156,32 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Python Programming", //Insert stack or technology you have experience in
+      progressPercentage: "95%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Machine Learning (scikit-learn)",
+      progressPercentage: "90%"
+    },
+    {
+      Stack: "Data Analysis & Visualization",
+      progressPercentage: "85%"
+    },
+    {
+      Stack: "Deep Learning (TensorFlow/Keras)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Computer Vision",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Web Development (Flask)",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Generative Models (GANs)",
+      progressPercentage: "75%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -174,29 +193,25 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "AI/ML Project Developer",
+      company: "Personal Portfolio Development",
+      companylogo: require("./assets/images/facebookLogo.png"), // Replace with appropriate logo
+      date: "2024 – Present",
+      desc: "Developed 10+ comprehensive machine learning projects covering the full spectrum from basic algorithms to advanced deep learning applications.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Built full-stack ML web applications with Flask for real-time predictions",
+        "Implemented computer vision projects using CNNs and TensorFlow/Keras",
+        "Created recommendation systems with neural network embeddings",
+        "Developed medical prediction systems for healthcare applications",
+        "Applied various ML algorithms: SVM, Random Forest, Gradient Boosting, Linear/Logistic Regression"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Data Science & Analytics",
+      company: "Machine Learning Projects",
+      companylogo: require("./assets/images/quoraLogo.png"), // Replace with appropriate logo
+      date: "2024 – Ongoing",
+      desc: "Specialized in exploratory data analysis, feature engineering, and building predictive models for various domains including finance, healthcare, and engineering."
     }
   ]
 };
@@ -212,29 +227,83 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "AI/ML Projects",
+  subtitle: "COMPREHENSIVE MACHINE LEARNING PROJECTS FROM BEGINNER TO ADVANCED LEVEL",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with credit score project image
+      projectName: "Credit Score & Default Risk Prediction",
+      projectDesc: "Complete ML project with Flask web app for financial risk assessment. Features regression & classification models with API endpoints and real-time predictions.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/01_Credit_Score_Prediction"
         }
-        //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/nextuLogo.webp"), // Replace with diabetes project image
+      projectName: "Diabetes Prediction System",
+      projectDesc: "Healthcare ML application with dual prediction models and web interface. Analyzes patient health metrics using classification & regression algorithms.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/02_Diabetes_Prediction"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with computer vision project image
+      projectName: "Computer Vision: Cup & Pen Classifier",
+      projectDesc: "Deep learning computer vision project using CNNs for image classification. Custom dataset with TensorFlow/Keras implementation.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/07_Computer_Vision_Cup_Pen_Classifier"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"), // Replace with recommender project image
+      projectName: "Movie Recommender System",
+      projectDesc: "Advanced deep learning recommendation system with neural network embeddings and collaborative filtering. Built with MovieLens 1M dataset.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/10_Movie_Recommender"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with heart disease project image
+      projectName: "Heart Disease Classification",
+      projectDesc: "Medical data analysis project for heart disease prediction using classification algorithms. Comprehensive Jupyter notebook analysis with medical insights.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/03_Heart_Disease_Classification"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"), // Replace with california housing project image
+      projectName: "California Housing EDA",
+      projectDesc: "Comprehensive exploratory data analysis with geographical visualization and feature correlation analysis of California housing market data.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/04_California_Housing_EDA"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with GAN project image
+      projectName: "Fashion MNIST GAN with PyTorch Lightning",
+      projectDesc: "Advanced Generative Adversarial Network for synthetic fashion image generation. Built with PyTorch Lightning, featuring comprehensive analysis of GAN-generated data impact on CNN performance.",
+      footerLink: [
+        {
+          name: "View on GitHub",
+          url: "https://github.com/GssHunterAI/We-Training-GAN"
         }
       ]
     }
@@ -246,56 +315,52 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Achievements And Projects 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Comprehensive AI/ML Project Portfolio - From Fundamentals to Advanced Applications!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "10+ Complete ML Projects",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Built a comprehensive collection of machine learning projects covering classification, regression, deep learning, and computer vision applications.",
+      image: require("./assets/images/codeInLogo.webp"), // Replace with AI/ML related image
+      imageAlt: "ML Projects Collection",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          name: "View All Projects",
+          url: "https://github.com/GssHunterAI/AI-Projects"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Full-Stack ML Applications",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Developed complete web applications with Flask for Credit Score Prediction and Diabetes Prediction, featuring real-time ML predictions and API endpoints.",
+      image: require("./assets/images/googleAssistantLogo.webp"), // Replace with web app logo
+      imageAlt: "Full-Stack ML Apps",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Credit Score App",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/01_Credit_Score_Prediction"
+        },
+        {
+          name: "Diabetes Prediction App",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/02_Diabetes_Prediction"
         }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Deep Learning & Generative AI",
+      subtitle: "Implemented advanced architectures including GANs, CNNs, and neural embeddings using TensorFlow/Keras and PyTorch Lightning for computer vision and generative modeling.",
+      image: require("./assets/images/pwaLogo.webp"), // Replace with DL related image
+      imageAlt: "Deep Learning Projects",
       footerLink: [
-        {name: "Certification", url: ""},
+        {name: "Fashion MNIST GAN", url: "https://github.com/GssHunterAI/We-Training-GAN"},
+        {name: "Computer Vision Project", url: "https://github.com/GssHunterAI/AI-Projects/tree/main/07_Computer_Vision_Cup_Pen_Classifier"},
         {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
+          name: "Movie Recommender",
+          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/10_Movie_Recommender"
         }
       ]
     }
@@ -308,20 +373,26 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
+    "Documenting my AI/ML project journey, sharing insights from building real-world applications, and helping others learn machine learning.",
+  displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://github.com/GssHunterAI/AI-Projects", // Replace with your actual blog links
+      title: "Building End-to-End ML Projects: From Data to Deployment",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A comprehensive guide on creating full-stack machine learning applications including Credit Score Prediction and Diabetes Prediction systems with Flask web interfaces."
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
+      url: "https://github.com/GssHunterAI/AI-Projects/tree/main/07_Computer_Vision_Cup_Pen_Classifier", // Replace with your actual blog links
+      title: "Computer Vision in Practice: CNN Image Classification Project",
       description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+        "Deep dive into building a custom image classifier using Convolutional Neural Networks, covering data preprocessing, model architecture, and training optimization."
+    },
+    {
+      url: "https://github.com/GssHunterAI/AI-Projects/tree/main/10_Movie_Recommender", // Replace with your actual blog links
+      title: "Building Recommendation Systems with Neural Network Embeddings",
+      description:
+        "Exploring advanced recommendation algorithms using deep learning embeddings and collaborative filtering techniques with the MovieLens dataset."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -330,33 +401,39 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "TALKS & PRESENTATIONS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "SHARING KNOWLEDGE ABOUT AI/ML AND LEARNING FROM THE COMMUNITY 🤖"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      title: "Introduction to Machine Learning",
+      subtitle: "Learning Session - AI/ML Fundamentals",
+      slides_url: "", // Add your slides URL when available
+      event_url: ""
+    },
+    {
+      title: "Building Your First Neural Network",
+      subtitle: "Deep Learning Workshop - From Theory to Implementation",
+      slides_url: "", // Add your slides URL when available
+      event_url: ""
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set true when you have actual talks to show
 };
 
 // Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "SHARING INSIGHTS ABOUT AI/ML AND TECH TRENDS",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
+    // Add your podcast links here when available
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set true when you have podcasts to show
 };
 
 // Resume Section
@@ -371,19 +448,19 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Interested in collaborating on AI/ML projects or want to discuss machine learning? Let's connect!",
+  number: "", // Add your phone number if you want to share it
+  email_address: "" // Add your email address here
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  userName: "", //Replace with your twitter username without @ when you have one
+  display: false // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set true if you are looking for opportunities in AI/ML field
 
 export {
   illustration,
