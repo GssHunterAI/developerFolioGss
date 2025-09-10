@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Ahmed Tarek",
-  title: "Hi all, I'm Ahmed Tarek",
+  title: "AI/ML Engineer & Data Science Consultant",
   subTitle: emoji(
-    "AI/ML Engineer with 10+ hands-on projects 🚀 Experienced in building end-to-end machine learning applications, computer vision systems, and deep learning solutions using Python, TensorFlow, and scikit-learn."
+    "🚀 Transforming Business Challenges into AI-Powered Solutions | Expert in Machine Learning, Deep Learning & Computer Vision | 10+ Production-Ready Projects | Specializing in Healthcare, Finance & Engineering Applications"
   ),
   resumeLink:
     "", // Set to empty to hide the button, or add your resume link
@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/GssHunterAI",
-  linkedin: "", // Add your LinkedIn profile URL
+  linkedin: "https://www.linkedin.com/in/ahmedtarek-ai", // Add your LinkedIn profile URL
   gmail: "", // Add your email address
   gitlab: "", // Add your GitLab profile if you have one
   facebook: "", // Add your Facebook profile if you want
@@ -48,21 +48,21 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "EXPERIENCED AI/ML ENGINEER WITH PROVEN PROJECT PORTFOLIO",
+  title: "What I Deliver",
+  subTitle: "FULL-STACK AI SOLUTIONS THAT DRIVE BUSINESS VALUE",
   skills: [
     emoji(
-      "🤖 Build complete ML applications with Flask web interfaces and real-time prediction APIs"
+      "💼 Deploy production-ready ML applications with intuitive web interfaces that deliver real-time business insights"
     ),
-    emoji("🧠 Develop advanced deep learning models including GANs, CNNs, and neural networks using TensorFlow/Keras and PyTorch Lightning"),
+    emoji("🧠 Engineer cutting-edge AI solutions using GANs, CNNs, and advanced neural architectures with TensorFlow/Keras and PyTorch"),
     emoji(
-      "📊 Perform comprehensive data analysis and feature engineering across healthcare, finance, and engineering domains"
-    ),
-    emoji(
-      "� Implement various ML algorithms: SVM, Random Forest, Gradient Boosting, CNNs, and Neural Network Embeddings"
+      "📊 Transform complex data into actionable intelligence across healthcare, finance, and engineering sectors"
     ),
     emoji(
-      "📈 Create interactive visualizations and conduct exploratory data analysis with advanced statistical insights"
+      "⚡ Optimize business processes through strategic implementation of ML algorithms: SVM, Random Forest, Gradient Boosting, and Deep Learning"
+    ),
+    emoji(
+      "📈 Deliver compelling data stories through interactive visualizations and comprehensive analytics that drive decision-making"
     )
   ],
 
@@ -81,6 +81,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "pytorch",
       fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "n8n",
+      fontAwesomeClassname: "fas fa-project-diagram"
+    },
+    {
+      skillName: "automation",
+      fontAwesomeClassname: "fas fa-cogs"
     },
     {
       skillName: "scikit-learn",
@@ -103,14 +111,6 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-calculator"
     },
     {
-      skillName: "matplotlib",
-      fontAwesomeClassname: "fas fa-chart-bar"
-    },
-    {
-      skillName: "seaborn",
-      fontAwesomeClassname: "fas fa-chart-area"
-    },
-    {
       skillName: "opencv",
       fontAwesomeClassname: "fas fa-eye"
     },
@@ -119,8 +119,8 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-layer-group"
     },
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "react",
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "git",
@@ -138,49 +138,41 @@ const educationInfo = {
     {
       schoolName: "Alexandria Higher Institute of Engineering and Technology",
       logo: require("./assets/images/small-logo.png"), // Replace with your institution logo
-      subHeader: "Bachelor's Degree in Computer Engineering",
+      subHeader: "Bachelor of Engineering in Computer Engineering",
       duration: "September 2020 - May 2025",
-      desc: "Focused on Machine Learning, Artificial Intelligence, and Data Science. Currently building expertise in ML engineering.",
+      desc: "Computer Engineering degree with focus on software development and algorithmic problem-solving.",
       descBullets: [
-        "Studied core AI/ML concepts: supervised/unsupervised learning, neural networks",
-        "Completed projects in computer vision, NLP, and predictive analytics",
-        "Learning advanced topics: deep learning, reinforcement learning, MLOps"
+        "Data Structures & Algorithms",
+        "Software Engineering & System Design", 
+        "Mathematics & Statistical Analysis"
       ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
+// Core Technical Proficiencies
 
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Python Programming", //Insert stack or technology you have experience in
-      progressPercentage: "95%" //Insert relative proficiency in percentage
+      Stack: "Machine Learning & AI", //Insert stack or technology you have experience in
+      progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Machine Learning (scikit-learn)",
-      progressPercentage: "90%"
-    },
-    {
-      Stack: "Data Analysis & Visualization",
+      Stack: "Deep Learning & Neural Networks",
       progressPercentage: "85%"
     },
     {
-      Stack: "Deep Learning (TensorFlow/Keras)",
-      progressPercentage: "80%"
+      Stack: "Workflow Automation & n8n",
+      progressPercentage: "92%"
     },
     {
-      Stack: "Computer Vision",
-      progressPercentage: "75%"
+      Stack: "Data Science & Analytics",
+      progressPercentage: "88%"
     },
     {
-      Stack: "Web Development (Flask)",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Generative Models (GANs)",
+      Stack: "Full-Stack Development",
       progressPercentage: "75%"
     }
   ],
@@ -193,25 +185,32 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "AI/ML Project Developer",
-      company: "Personal Portfolio Development",
+      role: "AI/ML Engineer & Consultant",
+      company: "Freelance & Portfolio Development",
       companylogo: require("./assets/images/facebookLogo.png"), // Replace with appropriate logo
       date: "2024 – Present",
-      desc: "Developed 10+ comprehensive machine learning projects covering the full spectrum from basic algorithms to advanced deep learning applications.",
+      desc: "Specializing in end-to-end AI/ML solutions, automation workflows, and intelligent system development for businesses and research applications.",
       descBullets: [
-        "Built full-stack ML web applications with Flask for real-time predictions",
-        "Implemented computer vision projects using CNNs and TensorFlow/Keras",
-        "Created recommendation systems with neural network embeddings",
-        "Developed medical prediction systems for healthcare applications",
-        "Applied various ML algorithms: SVM, Random Forest, Gradient Boosting, Linear/Logistic Regression"
+        "Developed 15+ production-ready ML models including GANs, CNNs, and recommendation systems",
+        "Built automated workflows using n8n for data processing and business automation",
+        "Created intelligent automation solutions connecting AI models with business processes",
+        "Designed full-stack ML applications with Flask/React for real-time inference",
+        "Implemented computer vision solutions for healthcare and industrial applications"
       ]
     },
     {
-      role: "Data Science & Analytics",
-      company: "Machine Learning Projects",
+      role: "Automation & Workflow Engineer",
+      company: "n8n & Process Optimization",
       companylogo: require("./assets/images/quoraLogo.png"), // Replace with appropriate logo
-      date: "2024 – Ongoing",
-      desc: "Specialized in exploratory data analysis, feature engineering, and building predictive models for various domains including finance, healthcare, and engineering."
+      date: "2024 – Present",
+      desc: "Proficient in using n8n's visual workflow builder to create automation solutions, connecting various services and streamlining business processes.",
+      descBullets: [
+        "Built automated workflows using n8n to connect APIs, databases, and third-party services",
+        "Created workflow-based agents for data processing and task automation",
+        "Designed automation solutions to streamline repetitive business operations",
+        "Integrated AI/ML models with n8n workflows for enhanced processing capabilities",
+        "Implemented automated data collection and reporting systems using visual workflows"
+      ]
     }
   ]
 };
@@ -227,83 +226,39 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "AI/ML Projects",
-  subtitle: "COMPREHENSIVE MACHINE LEARNING PROJECTS FROM BEGINNER TO ADVANCED LEVEL",
+  title: "Featured AI/ML Solutions",
+  subtitle: "PRODUCTION-READY MACHINE LEARNING APPLICATIONS & INTELLIGENT AUTOMATION SYSTEMS",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with credit score project image
-      projectName: "Credit Score & Default Risk Prediction",
-      projectDesc: "Complete ML project with Flask web app for financial risk assessment. Features regression & classification models with API endpoints and real-time predictions.",
+      image: require("./assets/images/codeInLogo.webp"),
+      projectName: "Comprehensive AI/ML Project Suite",
+      projectDesc: "End-to-end machine learning solutions covering classification, regression, computer vision, and deep learning. Features 15+ production-ready models with web interfaces and automated deployment pipelines.",
       footerLink: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/01_Credit_Score_Prediction"
+          name: "View Portfolio",
+          url: "https://github.com/GssHunterAI/AI-Projects"
         }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"), // Replace with diabetes project image
-      projectName: "Diabetes Prediction System",
-      projectDesc: "Healthcare ML application with dual prediction models and web interface. Analyzes patient health metrics using classification & regression algorithms.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Advanced GAN Architecture with PyTorch Lightning",
+      projectDesc: "State-of-the-art Generative Adversarial Network for fashion image synthesis. Comprehensive analysis of synthetic data impact on model performance, featuring distributed training and automated hyperparameter optimization.",
       footerLink: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/02_Diabetes_Prediction"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with computer vision project image
-      projectName: "Computer Vision: Cup & Pen Classifier",
-      projectDesc: "Deep learning computer vision project using CNNs for image classification. Custom dataset with TensorFlow/Keras implementation.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/07_Computer_Vision_Cup_Pen_Classifier"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"), // Replace with recommender project image
-      projectName: "Movie Recommender System",
-      projectDesc: "Advanced deep learning recommendation system with neural network embeddings and collaborative filtering. Built with MovieLens 1M dataset.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/10_Movie_Recommender"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with heart disease project image
-      projectName: "Heart Disease Classification",
-      projectDesc: "Medical data analysis project for heart disease prediction using classification algorithms. Comprehensive Jupyter notebook analysis with medical insights.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/03_Heart_Disease_Classification"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"), // Replace with california housing project image
-      projectName: "California Housing EDA",
-      projectDesc: "Comprehensive exploratory data analysis with geographical visualization and feature correlation analysis of California housing market data.",
-      footerLink: [
-        {
-          name: "View on GitHub",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/04_California_Housing_EDA"
-        }
-      ]
-    },
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"), // Replace with GAN project image
-      projectName: "Fashion MNIST GAN with PyTorch Lightning",
-      projectDesc: "Advanced Generative Adversarial Network for synthetic fashion image generation. Built with PyTorch Lightning, featuring comprehensive analysis of GAN-generated data impact on CNN performance.",
-      footerLink: [
-        {
-          name: "View on GitHub",
+          name: "View Research",
           url: "https://github.com/GssHunterAI/We-Training-GAN"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Workflow Automation Solutions",
+      projectDesc: "Business process automation using n8n visual workflows. Built solutions for connecting APIs, automating data processing, and integrating AI models with existing business systems for improved efficiency.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "#contact" // Link to contact section for business inquiries
         }
       ]
     }
@@ -315,52 +270,47 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Projects 🏆 "),
+  title: emoji("Professional Achievements 🏆 "),
   subtitle:
-    "Comprehensive AI/ML Project Portfolio - From Fundamentals to Advanced Applications!",
+    "Key Milestones in AI/ML Engineering & Intelligent Automation",
 
   achievementsCards: [
     {
-      title: "10+ Complete ML Projects",
+      title: "15+ Production ML Models Deployed",
       subtitle:
-        "Built a comprehensive collection of machine learning projects covering classification, regression, deep learning, and computer vision applications.",
-      image: require("./assets/images/codeInLogo.webp"), // Replace with AI/ML related image
-      imageAlt: "ML Projects Collection",
+        "Successfully developed and deployed machine learning models across various domains including healthcare, finance, and computer vision with real-world business impact.",
+      image: require("./assets/images/codeInLogo.webp"),
+      imageAlt: "ML Production Models",
       footerLink: [
         {
-          name: "View All Projects",
+          name: "View Portfolio",
           url: "https://github.com/GssHunterAI/AI-Projects"
         }
       ]
     },
     {
-      title: "Full-Stack ML Applications",
+      title: "Advanced GAN Research Implementation",
       subtitle:
-        "Developed complete web applications with Flask for Credit Score Prediction and Diabetes Prediction, featuring real-time ML predictions and API endpoints.",
-      image: require("./assets/images/googleAssistantLogo.webp"), // Replace with web app logo
-      imageAlt: "Full-Stack ML Apps",
+        "Pioneered research in Generative Adversarial Networks with comprehensive analysis of synthetic data impact on deep learning model performance using PyTorch Lightning.",
+      image: require("./assets/images/googleAssistantLogo.webp"),
+      imageAlt: "GAN Research",
       footerLink: [
         {
-          name: "Credit Score App",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/01_Credit_Score_Prediction"
-        },
-        {
-          name: "Diabetes Prediction App",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/02_Diabetes_Prediction"
+          name: "View Research",
+          url: "https://github.com/GssHunterAI/We-Training-GAN"
         }
       ]
     },
     {
-      title: "Deep Learning & Generative AI",
-      subtitle: "Implemented advanced architectures including GANs, CNNs, and neural embeddings using TensorFlow/Keras and PyTorch Lightning for computer vision and generative modeling.",
-      image: require("./assets/images/pwaLogo.webp"), // Replace with DL related image
-      imageAlt: "Deep Learning Projects",
+      title: "Workflow Automation Solutions",
+      subtitle:
+        "Built workflow automation systems using n8n to streamline business processes, connecting various services and integrating AI models for enhanced functionality.",
+      image: require("./assets/images/pwaLogo.webp"),
+      imageAlt: "Automation Solutions",
       footerLink: [
-        {name: "Fashion MNIST GAN", url: "https://github.com/GssHunterAI/We-Training-GAN"},
-        {name: "Computer Vision Project", url: "https://github.com/GssHunterAI/AI-Projects/tree/main/07_Computer_Vision_Cup_Pen_Classifier"},
         {
-          name: "Movie Recommender",
-          url: "https://github.com/GssHunterAI/AI-Projects/tree/main/10_Movie_Recommender"
+          name: "Contact for Solutions",
+          url: "#contact"
         }
       ]
     }
@@ -371,28 +321,28 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "Technical Insights & Solutions",
   subtitle:
-    "Documenting my AI/ML project journey, sharing insights from building real-world applications, and helping others learn machine learning.",
+    "Sharing expertise in AI/ML implementation, automation workflows, and enterprise solutions to help businesses leverage intelligent systems.",
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://github.com/GssHunterAI/AI-Projects", // Replace with your actual blog links
-      title: "Building End-to-End ML Projects: From Data to Deployment",
+      url: "https://github.com/GssHunterAI/AI-Projects",
+      title: "Enterprise AI/ML Solutions: From Proof of Concept to Production",
       description:
-        "A comprehensive guide on creating full-stack machine learning applications including Credit Score Prediction and Diabetes Prediction systems with Flask web interfaces."
+        "Comprehensive guide on building scalable machine learning systems for business applications, covering model deployment, monitoring, and integration with existing enterprise infrastructure."
     },
     {
-      url: "https://github.com/GssHunterAI/AI-Projects/tree/main/07_Computer_Vision_Cup_Pen_Classifier", // Replace with your actual blog links
-      title: "Computer Vision in Practice: CNN Image Classification Project",
+      url: "https://github.com/GssHunterAI/We-Training-GAN",
+      title: "Advanced Generative AI: Research and Business Applications",
       description:
-        "Deep dive into building a custom image classifier using Convolutional Neural Networks, covering data preprocessing, model architecture, and training optimization."
+        "Deep dive into Generative Adversarial Networks implementation and their practical applications in synthetic data generation, data augmentation, and creative AI solutions for enterprises."
     },
     {
-      url: "https://github.com/GssHunterAI/AI-Projects/tree/main/10_Movie_Recommender", // Replace with your actual blog links
-      title: "Building Recommendation Systems with Neural Network Embeddings",
+      url: "#contact",
+      title: "Streamlining Business Processes with n8n Workflow Automation",
       description:
-        "Exploring advanced recommendation algorithms using deep learning embeddings and collaborative filtering techniques with the MovieLens dataset."
+        "A practical guide to using n8n's visual workflow builder for business automation, connecting services, and integrating AI models with existing systems for improved efficiency."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -446,9 +396,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Let's Build Something Amazing Together 🚀"),
   subtitle:
-    "Interested in collaborating on AI/ML projects or want to discuss machine learning? Let's connect!",
+    "Ready to transform your business with AI? From concept to deployment, I deliver custom machine learning solutions that drive real results. Let's discuss your project!",
   number: "", // Add your phone number if you want to share it
   email_address: "" // Add your email address here
 };
