@@ -1,41 +1,74 @@
-name: Build and Deploy
+name: Build and Deploy Portfolio
+
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
+  MEDIUM_USERNAME: "" # Change this to your medium username if you have one
+
 on:
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  
+  # Triggers the workflow on push to master branch
   push:
-    branches:
-      - master
+    branches: [master]
+  
+  # Scheduled trigger - runs every Monday at 12:00 UTC to keep GitHub data fresh  
   schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+    - cron: "0 12 * * 1"
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+      contents: read    # to checkout the repository
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4
         with:
+          # Disable token persistence for security
           persist-credentials: false
 
-      - name: Setup Node.js 🔧
-        uses: actions/setup-node@v3.8.1
+      - name: Setup Node.js Environment 🔧
+        uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: '18'
+          cache: 'npm'
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
+      - name: Install Dependencies �
+        run: npm ci
 
-      - name: Install and Build 🔧 # Build the Project
-        run: |
-          npm install
-          npm run build
-      - name: Deploy 🚀
+      - name: Fetch GitHub Profile Data 📊
+        run: node fetch.js
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_GITHUB_DATA: "true"
+
+      - name: Build Portfolio 🏗️
+        run: npm run build
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_GITHUB_DATA: "true"
+
+      - name: Deploy to GitHub Pages 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          # GitHub automatically provides this token
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Deploy to gh-pages branch  
+          branch: gh-pages
+          # Build output folder
+          folder: build
+          # Clean the deployment branch before deploying
+          clean: true
+          # Commit message for deployment
+          commit-message: "Deploy portfolio - ${{ github.sha }}"
