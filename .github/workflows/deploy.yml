@@ -1,0 +1,59 @@
+name: Build and Deploy Portfolio
+
+env:
+  CI: false
+  GITHUB_USERNAME: ${{ github.repository_owner }}
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  USE_GITHUB_DATA: "true"
+  MEDIUM_USERNAME: ""
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [master]
+  schedule:
+    - cron: "0 12 * * 1"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment 🔧
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install Dependencies 📦
+        run: npm ci
+
+      - name: Fetch GitHub Profile Data 📊
+        run: node fetch.js
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_GITHUB_DATA: "true"
+
+      - name: Build Portfolio 🏗️
+        run: npm run build
+        env:
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USE_GITHUB_DATA: "true"
+
+      - name: Deploy to GitHub Pages 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
+          force_orphan: true
