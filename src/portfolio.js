@@ -138,7 +138,7 @@ const educationInfo = {
     {
       schoolName: "Alexandria Higher Institute of Engineering and Technology",
       logo: require("./assets/images/small-logo.png"), // Replace with your institution logo
-      subHeader: "Bachelor of Engineering in Computer Engineering",
+      subHeader: "Bachelor's Degree in Computer Engineering",
       duration: "September 2020 - May 2025",
       desc: "Computer Engineering degree with focus on software development and algorithmic problem-solving.",
       descBullets: [
@@ -186,8 +186,8 @@ const workExperiences = {
   experience: [
     {
       role: "AI/ML Engineer & Consultant",
-      company: "Freelance & Portfolio Development",
-      companylogo: require("./assets/images/facebookLogo.png"), // Replace with appropriate logo
+      company: "Independent Consulting",
+      companylogo: require("./assets/images/best-ai-consulting-firms-1.webp"), // AI/ML consulting image
       date: "2024 – Present",
       desc: "Specializing in end-to-end AI/ML solutions, automation workflows, and intelligent system development for businesses and research applications.",
       descBullets: [
@@ -199,9 +199,9 @@ const workExperiences = {
       ]
     },
     {
-      role: "Automation & Workflow Engineer",
-      company: "n8n & Process Optimization",
-      companylogo: require("./assets/images/quoraLogo.png"), // Replace with appropriate logo
+      role: "Automation Specialist",
+      company: "Workflow Development",
+      companylogo: require("./assets/images/n8n.jpg"), // n8n automation platform logo
       date: "2024 – Present",
       desc: "Proficient in using n8n's visual workflow builder to create automation solutions, connecting various services and streamlining business processes.",
       descBullets: [
@@ -230,7 +230,7 @@ const bigProjects = {
   subtitle: "PRODUCTION-READY MACHINE LEARNING APPLICATIONS & INTELLIGENT AUTOMATION SYSTEMS",
   projects: [
     {
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/projects.webp"),
       projectName: "Comprehensive AI/ML Project Suite",
       projectDesc: "End-to-end machine learning solutions covering classification, regression, computer vision, and deep learning. Features 15+ production-ready models with web interfaces and automated deployment pipelines.",
       footerLink: [
@@ -241,7 +241,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
+      image: require("./assets/images/gan.png"),
       projectName: "Advanced GAN Architecture with PyTorch Lightning",
       projectDesc: "State-of-the-art Generative Adversarial Network for fashion image synthesis. Comprehensive analysis of synthetic data impact on model performance, featuring distributed training and automated hyperparameter optimization.",
       footerLink: [
@@ -252,7 +252,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/n8n.jpg"),
       projectName: "Workflow Automation Solutions",
       projectDesc: "Business process automation using n8n visual workflows. Built solutions for connecting APIs, automating data processing, and integrating AI models with existing business systems for improved efficiency.",
       footerLink: [
@@ -279,7 +279,7 @@ const achievementSection = {
       title: "15+ Production ML Models Deployed",
       subtitle:
         "Successfully developed and deployed machine learning models across various domains including healthcare, finance, and computer vision with real-world business impact.",
-      image: require("./assets/images/codeInLogo.webp"),
+      image: require("./assets/images/projects.webp"),
       imageAlt: "ML Production Models",
       footerLink: [
         {
@@ -292,7 +292,7 @@ const achievementSection = {
       title: "Advanced GAN Research Implementation",
       subtitle:
         "Pioneered research in Generative Adversarial Networks with comprehensive analysis of synthetic data impact on deep learning model performance using PyTorch Lightning.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/gan.png"),
       imageAlt: "GAN Research",
       footerLink: [
         {
@@ -305,7 +305,7 @@ const achievementSection = {
       title: "Workflow Automation Solutions",
       subtitle:
         "Built workflow automation systems using n8n to streamline business processes, connecting various services and integrating AI models for enhanced functionality.",
-      image: require("./assets/images/pwaLogo.webp"),
+      image: require("./assets/images/n8n.jpg"),
       imageAlt: "Automation Solutions",
       footerLink: [
         {
