@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/developerFolioGss/static/css/main.50f1c6af.css",
+    "main.js": "/developerFolioGss/static/js/main.b1df0b82.js",
+    "static/css/64.bba8fa55.chunk.css": "/developerFolioGss/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/developerFolioGss/static/js/64.56dc6704.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/developerFolioGss/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.bda0d7b7.chunk.js": "/developerFolioGss/static/js/769.bda0d7b7.chunk.js",
+    "static/media/Montserrat-Regular.ttf": "/developerFolioGss/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Agustina.woff": "/developerFolioGss/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/manOnTable.svg": "/developerFolioGss/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/best-ai-consulting-firms-1.webp": "/developerFolioGss/static/media/best-ai-consulting-firms-1.d02ecbf673304c1c5b4a.webp",
+    "static/media/projects.webp": "/developerFolioGss/static/media/projects.219c084c167c01925945.webp",
+    "static/media/contactMailDark.svg": "/developerFolioGss/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/developerFolioGss/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/n8n.jpg": "/developerFolioGss/static/media/n8n.1e984bbc43f3f1b6abb6.jpg",
+    "static/media/skill.svg": "/developerFolioGss/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/resume.pdf": "/developerFolioGss/static/media/resume.f0f733dd3cd732b39262.pdf",
+    "index.html": "/developerFolioGss/index.html",
+    "static/media/talksCardBack.svg": "/developerFolioGss/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.50f1c6af.css.map": "/developerFolioGss/static/css/main.50f1c6af.css.map",
+    "main.b1df0b82.js.map": "/developerFolioGss/static/js/main.b1df0b82.js.map",
+    "64.bba8fa55.chunk.css.map": "/developerFolioGss/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/developerFolioGss/static/js/64.56dc6704.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/developerFolioGss/static/css/769.b3cbb36b.chunk.css.map",
+    "769.bda0d7b7.chunk.js.map": "/developerFolioGss/static/js/769.bda0d7b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50f1c6af.css",
+    "static/js/main.b1df0b82.js"
+  ]
+}
